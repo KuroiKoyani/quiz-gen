@@ -226,8 +226,16 @@ body {
     border-radius: 50%;
     margin: 15px 5px;
     text-align: center;
+    padding: 5px;
 }
 
+.quiz-box .answers-indicator div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 1.5px rgb(0 0 0 / 40%);
+    transform:
+        box-shadow,
+        scale(1.1) 200ms ease-in;
+}
 .quiz-box .answers-indicator div.correct {
     background-color: green;
     background-image: url("../img/correct.png");
