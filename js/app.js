@@ -99,6 +99,7 @@ function loadQuestionByIndex(index) {
 
 function getResult(element) {
   const quizIndex = quiz.indexOf(element);
+  element.classList.remove("wrong", "correct");
 
   if (element.innerHTML === currentQuestion.correct_answer) {
     element.classList.add("correct");
@@ -156,6 +157,10 @@ function answersIndicator() {
 }
 
 function updateAnswerIndicator(markType) {
+  answersIndicatorContainer.children[questionCounter - 1].classList.remove(
+    "correct",
+    "wrong",
+  );
   answersIndicatorContainer.children[questionCounter - 1].classList.add(
     markType,
   );
