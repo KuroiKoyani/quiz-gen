@@ -5,6 +5,7 @@
 	<title>Quizziee</title>
 	<link rel="icon" href="img/logo.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +20,7 @@
 		<label for="topic">Choose Topic:</label>
 
 		<select name="topic" id="topic">
-			<option value="sports">Sports</option>
+			<option value="test">Sports</option>
 			<option value="logic">Logic</option>
 			<option value="gk">GK</option>
 			<option value="computer">Computer</option>
@@ -37,8 +38,8 @@
 
         </div>
         <div class="next-question-btn">
-            <button type="button" class="btn next-btn" onclick="next()">Next</button>
             <button type="button" class="btn exit-btn" onclick="quizOver()">Quit</button>
+            <button type="button" class="btn next-btn" onclick="next()">Next</button>
         </div>
         <div class="answers-indicator">
 
@@ -77,7 +78,7 @@
         <button type="button" class="btn go-home-btn" onclick="goToHome()">Go To Home</button>
     </div>
 
-    <script src="js/question.js"></script>
+    <script src="questions.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
